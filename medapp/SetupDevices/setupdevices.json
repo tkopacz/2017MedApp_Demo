@@ -1,0 +1,25 @@
+﻿{
+  "devicesTags": [
+    {
+      "objectid": "AAAA",
+      "address": "ul. Jedna",
+      "city": "Warsaw",
+      "country": "Poland",
+      "notes": "Left side of building"
+    },
+    {
+      "objectid": "AAAC",
+      "address": "ul. Druga",
+      "city": "Poznań",
+      "country": "Poland",
+      "notes": "Inside Costa Caffe"
+    },
+    {
+      "objectid": "AAAB",
+      "address": "ul. Trzecia",
+      "city": "Wrocław",
+      "country": "Poland",
+      "notes": "Passage A, near restrooms"
+    }
+  ]
+}

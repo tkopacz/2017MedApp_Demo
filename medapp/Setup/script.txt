@@ -1,0 +1,21 @@
+az account set --subscription DEMOTEST
+az group create --name rgMedapp --location westeurope
+
+REM IOT HUB AND DEVICES
+
+az iot hub create --name iothmedapp01 --resource-group rgMedapp --sku S1
+az iot device create --hub-name iothmedapp01 --device-id dev01
+az iot device create --hub-name iothmedapp01 --device-id dev02
+az iot device list --hub-name iothmedapp01
+az iot device list --hub-name iothmedapp01 --output table --query "[].{ deviceId: deviceId, primaryKey: authentication.symmetricKey.primaryKey }"
+az iot device show-connection-string --hub-name iothmedapp01
+
+az iot hub consumer-group create --hub-name iothmedapp01 --name sa
+
+REM SERVICE BUS
+REM using ARM Template
+
+az group deployment create --name med01 --resource-group rgMedapp --template-file servicebussubtopic.json --parameters @servicebussubtopic.parameters.json
+
+REM StreamAnalytics - by hand
+ 

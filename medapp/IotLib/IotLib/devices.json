@@ -1,0 +1,20 @@
+{
+  "iothubname": "[iothubname].azure-devices.net",
+  "devices": [
+    {
+      "iotdevicename": "defib01",
+      "iotdevicekey": "[key]",
+      "objectid": "AAAA"
+    },
+    {
+      "iotdevicename": "defib03",
+      "iotdevicekey": "[key]",
+      "objectid": "AAAC"
+    },
+    {
+      "iotdevicename": "defib02",
+      "iotdevicekey": "[key]",
+      "objectid": "AAAB"
+    }
+  ]
+}
